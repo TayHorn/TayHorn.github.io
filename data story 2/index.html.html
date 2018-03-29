@@ -9,6 +9,22 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 	<!--Styles-->
 	<style>
+
+	.chart-container {
+  position: relative;
+  margin: auto;
+  height: 1000px;
+  width: 950px;
+	max-width:60%;
+	float:left;
+}
+.chart-description {
+	position:relative;
+	margin: auto;
+	clear:none;
+	float:left;
+	width:40%;
+}
 		a {
 			font-style: italic;
 			color:#2e6d9d;
@@ -17,6 +33,10 @@
 		body {
 		    margin: 0;
 		    font-family: 'IBM Plex Sans Condensed', sans-serif;
+		}
+		.last-sentence {
+			float:left;
+			position:relative;
 		}
 		.hero {
 			background-image: url("file:///E:/data%20story%202/img/Background.png");
@@ -169,18 +189,14 @@
 				<span class="name">Whales</span>
 				<p class="factoid">Another animal that has received more media coverage for being poached on a mass scale is whales. The majority of the 47 instances of being smuggled into the U.S. was for the whale's meat.</p>
 			</div>
+			<br><br><br><br><br><br>
 			<div class="chart-description">
 				<p> The United States Fish and Wildlife Service provides an in depth look at the general purpose of every imported endangered species. These are classified as the following: breeding in captivity or artificial propagation, law enforcement/judicial/forensic use only, scientific, educational, biomedical research, commercial, botanic gardens, personal, reintroduction/introduction into the wild, hunting trophies, circuses/traveling exhibitions, and zoos. In 2016, personal and commercial purposes dominated the list from the confiscated endangered species.
 			</div>
-		</div>
-		<div class="link">
-			<a href="https://docs.google.com/spreadsheets/d/1bZOTF8a742WaqB_-B3702K6nMSFVUPoc0v1CijrXlb0/edit?usp=sharing">Confiscations/seizures of endangered animals through trade in 2016</a>
-			<br>
-			<a href="data story 2/USFW Import Export General Keys - Oct 2013.pdf">USFW import and export general keys</a>
-		</div>
-	</div>
 
+<div class="chart-container">
 	<canvas id="myChart"></canvas>
+</div>
 
 	<script>
 		var chart = new Chart(document.getElementById("myChart"), {
@@ -227,4 +243,13 @@
 		});
 	</script>
 
+	<br>
+	<p id="last-sentence">Despite active efforts for reform from the USFWS such as The Endangered Species Act and captive breeding, which is breeding animals in a safe and controlled environment such as a zoo, we still have long ways to go before we will start to see the downfall of the illegal trade of endangered speicies.</P>
+	</div>
+	<div class="link">
+	<a href="https://docs.google.com/spreadsheets/d/1bZOTF8a742WaqB_-B3702K6nMSFVUPoc0v1CijrXlb0/edit?usp=sharing">Confiscations/seizures of endangered animals through trade in 2016</a>
+	<br>
+	<a href="data story 2/USFW Import Export General Keys - Oct 2013.pdf">USFW import and export general keys</a>
+	</div>
+	</div>
 </body>
